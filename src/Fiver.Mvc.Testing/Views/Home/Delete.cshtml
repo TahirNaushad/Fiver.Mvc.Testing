@@ -1,0 +1,14 @@
+﻿@using Fiver.Mvc.Testing.Models.Home
+@model MovieViewModel
+
+<h2>Delete Confirmation?</h2>
+
+<form method="post" asp-action="Delete" asp-route-id="@Model.Id">
+    <label asp-for="Title"><strong>Title: </strong></label>
+    <label>@Model.Title</label>
+
+    <br/><br />
+
+    <input type="submit" value="Delete" />
+    <a asp-action="Index" asp-controller="Home">Cancel</a>
+</form>

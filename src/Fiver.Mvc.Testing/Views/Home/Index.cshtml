@@ -1,0 +1,28 @@
+﻿@using Fiver.Mvc.Testing.Models.Home
+@model List<MovieInfoViewModel>
+
+<h2>Movies List</h2>
+
+<a asp-action="Create" asp-controller="Home">Add New</a>
+
+<table>
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Year</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Title</td>
+                <td>@item.ReleaseYear</td>
+                <td><a asp-action="Edit" asp-route-id="@item.Id">Edit</a></td>
+                <td><a asp-action="Delete" asp-route-id="@item.Id">Delete</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

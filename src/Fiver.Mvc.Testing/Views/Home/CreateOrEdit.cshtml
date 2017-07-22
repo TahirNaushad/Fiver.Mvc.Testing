@@ -1,0 +1,27 @@
+﻿@using Fiver.Mvc.Testing.Models.Home
+@model MovieViewModel
+
+<h2>Movies Details</h2>
+
+<form method="post" asp-action="Save">
+    <input type="hidden" asp-for="Id" />
+    <input type="hidden" asp-for="IsNew" />
+
+    <label asp-for="Title"><strong>Title: </strong></label>
+    <input asp-for="Title" />
+    
+    <br />
+    
+    <label asp-for="ReleaseYear"><strong>Year: </strong></label>
+    <input asp-for="ReleaseYear" />
+    
+    <br />
+
+    <label asp-for="Summary"><strong>Summary: </strong></label>
+    <textarea asp-for="Summary" rows="5" cols="100"></textarea>
+
+    <br /><br />
+
+    <input type="submit" value="Save" />
+    <a asp-action="Index" asp-controller="Home">Cancel</a>
+</form>

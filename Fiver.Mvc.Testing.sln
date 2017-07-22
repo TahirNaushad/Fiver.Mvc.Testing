@@ -3,8 +3,34 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.12
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{AC66CB55-5C5C-479B-B902-5F65CCEC52CB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{8DAE5899-B7E2-4C60-902C-406BEA07731A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiver.Mvc.Testing", "src\Fiver.Mvc.Testing\Fiver.Mvc.Testing.csproj", "{BF33F2B3-C4D1-43EC-9C16-BACEB0E0D4EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiver.Mvc.Testing.Tests", "tests\Fiver.Mvc.Testing.Tests\Fiver.Mvc.Testing.Tests.csproj", "{C1F70586-F7EA-4F02-B1FC-FBA40D03D222}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF33F2B3-C4D1-43EC-9C16-BACEB0E0D4EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF33F2B3-C4D1-43EC-9C16-BACEB0E0D4EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF33F2B3-C4D1-43EC-9C16-BACEB0E0D4EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF33F2B3-C4D1-43EC-9C16-BACEB0E0D4EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1F70586-F7EA-4F02-B1FC-FBA40D03D222}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1F70586-F7EA-4F02-B1FC-FBA40D03D222}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1F70586-F7EA-4F02-B1FC-FBA40D03D222}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1F70586-F7EA-4F02-B1FC-FBA40D03D222}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BF33F2B3-C4D1-43EC-9C16-BACEB0E0D4EC} = {AC66CB55-5C5C-479B-B902-5F65CCEC52CB}
+		{C1F70586-F7EA-4F02-B1FC-FBA40D03D222} = {8DAE5899-B7E2-4C60-902C-406BEA07731A}
 	EndGlobalSection
 EndGlobal
