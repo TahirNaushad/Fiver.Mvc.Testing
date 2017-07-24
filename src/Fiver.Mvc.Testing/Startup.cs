@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Fiver.Mvc.Testing.OtherLayers;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 
 namespace Fiver.Mvc.Testing
 {
@@ -11,8 +12,9 @@ namespace Fiver.Mvc.Testing
         public void ConfigureServices(
             IServiceCollection services)
         {
-            services.AddSingleton<IMovieService, MovieService>();
-
+            // for integration testing use Try...
+            services.TryAddSingleton<IMovieService, MovieService>(); 
+            
             services.AddMvc();
         }
 

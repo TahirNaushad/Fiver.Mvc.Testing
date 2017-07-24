@@ -7,7 +7,7 @@ using Moq;
 using System.Collections.Generic;
 using Xunit;
 
-namespace Fiver.Mvc.Testing.Tests
+namespace Fiver.Mvc.Testing.Tests.Unit
 {
     public class MoviesControllerTests
     {

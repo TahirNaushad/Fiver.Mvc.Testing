@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using Xunit;
 
-namespace Fiver.Mvc.Testing.Tests
+namespace Fiver.Mvc.Testing.Tests.Unit
 {
     public class MovieRepositoryTests
     {
