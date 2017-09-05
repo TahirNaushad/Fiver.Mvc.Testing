@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
 using Fiver.Mvc.Testing.OtherLayers;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
@@ -20,8 +19,7 @@ namespace Fiver.Mvc.Testing
 
         public void Configure(
             IApplicationBuilder app, 
-            IHostingEnvironment env, 
-            ILoggerFactory loggerFactory)
+            IHostingEnvironment env)
         {
             app.UseDeveloperExceptionPage();
             app.UseMvcWithDefaultRoute();
